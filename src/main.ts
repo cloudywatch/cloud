@@ -15,6 +15,7 @@ async function bootstrap() {
 app.enableCors({
   origin: [    
     'http://localhost:3000',
+    'http://103.170.183.27',    
     'https://skylabel.netlify.app',
     'http://www.himyone.herokuapp.com',
     'http://app.himyone.herokuapp.com',
@@ -31,6 +32,6 @@ app.enableCors({
   credentials: true
 });
   // await app.listen(process.env.PORT || 3000);
-  await app.listen(process.env.PORT || 5000);
+  await app.listen(process.env.PORT || 9000);
 }
 bootstrap();
