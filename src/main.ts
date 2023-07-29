@@ -15,7 +15,7 @@ async function bootstrap() {
 app.enableCors({
   origin: [    
     'http://localhost:3000',
-    'http://103.170.183.27',    
+    'http://103.170.183.27:3000',
     'https://skylabel.netlify.app',
     'http://www.himyone.herokuapp.com',
     'http://app.himyone.herokuapp.com',
