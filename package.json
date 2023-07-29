@@ -3,8 +3,8 @@
   "version": "0.0.1",
   "description": "",
   "engines": {
-    "node": "16.14.2",
-    "npm": "8.5.0"
+    "node": "16.20.1",
+    "npm": "8.19.4"
   },
   "author": "",
   "private": true,
