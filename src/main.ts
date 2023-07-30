@@ -12,20 +12,27 @@ async function bootstrap() {
 //     credentials: true
 // });
 
+// app.enableCors({
+//   origin: [    
+//     'http://localhost:3000',    
+//     'https://skylabel.netlify.app',
+//     'http://www.himyone.herokuapp.com',
+//     'http://app.himyone.herokuapp.com',
+//     'https://himyone.herokuapp.com',
+//     'https://www.himyone.herokuapp.com',
+//     'https://app.himyone.herokuapp.com',
+//     'https://sevenstar-gazi.netlify.app',
+//     'https://somak-gazi-dev.netlify.app',
+//     'https://62f121ef8fac9d14a6d76fc5--sevenstar-gazi.netlify.app'
+    
+//   ],
+//   methods: 'GET,HEAD,PUT,PATCH,POST,DELETE,OPTIONS',
+//   allowedHeaders: 'X-Token, X-Requested-With, X-HTTP-Method-Override, Content-Type, Accept, Observe',
+//   credentials: true
+// });
 app.enableCors({
   origin: [    
-    'http://localhost:3000',
-    'http://103.170.183.27:3000',
-    'https://skylabel.netlify.app',
-    'http://www.himyone.herokuapp.com',
-    'http://app.himyone.herokuapp.com',
-    'https://himyone.herokuapp.com',
-    'https://www.himyone.herokuapp.com',
-    'https://app.himyone.herokuapp.com',
-    'https://sevenstar-gazi.netlify.app',
-    'https://somak-gazi-dev.netlify.app',
-    'https://62f121ef8fac9d14a6d76fc5--sevenstar-gazi.netlify.app'
-    
+    '*'
   ],
   methods: 'GET,HEAD,PUT,PATCH,POST,DELETE,OPTIONS',
   allowedHeaders: 'X-Token, X-Requested-With, X-HTTP-Method-Override, Content-Type, Accept, Observe',
@@ -35,3 +42,5 @@ app.enableCors({
   await app.listen(process.env.PORT || 9000);
 }
 bootstrap();
+
+// 'http://103.170.183.27:3000',
